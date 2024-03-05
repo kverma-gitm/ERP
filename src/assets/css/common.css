@@ -1,0 +1,478 @@
+
+
+* {
+	padding: 0;
+	margin: 0;
+
+}
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+  background-color: #fff;
+  background-image: url(../img/school-bg.jpg);
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+body, html {
+  /* prevent horizontal scrolling */
+
+}
+
+
+html {
+ /* scroll-behavior: smooth;*/
+}
+
+
+li, ul, ol {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	color: #000000;
+	font-weight:600;
+}
+p {
+	font-size: 14px;	
+	color:#000000
+}
+button, button:hover, a, a:hover {
+	transition: .4s;
+}
+
+a {
+  color: #000;
+}
+a:hover {
+	color: #c83b28;
+}
+a, a:hover, a:focus, a:active, button, button:focus, input, textarea {
+	outline: 0;
+	text-decoration: none;
+}
+
+h1{font-family: 'Poppins', sans-serif;font-style: normal;font-size: 25px; font-weight: 600; color: #3c4257; margin: 0;padding: 0; letter-spacing: -0.5px;padding-bottom: 8px;}
+h2{font-family: 'Poppins', sans-serif;font-style: normal;font-size: 18px;font-weight: 600; color: #3c4257}
+h3{font-family: 'Poppins', sans-serif; font-size: 19px; color: #000; margin: 0;padding: 0;line-height: normal;}
+
+p{font-family: 'Roboto', sans-serif;font-style: normal;font-size: 14px;}
+
+
+/* 02. COMMON STYLES */
+
+.relative {
+	position:relative !important
+}
+.fixedpadding20 {
+	padding:20px 0
+}
+.fixedpadding30 {
+	padding:30px 0
+}
+.fixedpadding40 {
+	padding:40px 0
+}
+.fixedpadding50 {
+	padding:50px 0
+}
+.fixedpadding60 {
+	padding:60px 0
+}
+.fixedpadding70 {
+	padding:70px 0
+}
+.fixedpadding80 {
+	padding:80px 0
+}
+.fixedpadding90 {
+	padding:90px 0
+}
+.fixedpadding100 {
+	padding:100px 0
+}
+.space10 {
+	margin-bottom: 10px;
+}
+.space20 {
+	margin-bottom: 20px;
+}
+.space25 {
+	margin-bottom: 25px;
+}
+.space30 {
+	margin-bottom: 30px;
+}
+.space40 {
+	margin-bottom: 40px;
+}
+.space50 {
+	margin-bottom: 50px;
+}
+.space60 {
+	margin-bottom: 60px;
+}
+.space70 {
+	margin-bottom: 70px;
+}
+.space80 {
+	margin-bottom: 80px;
+}
+.space90 {
+	margin-bottom: 90px;
+}
+.space100 {
+	margin-bottom: 100px;
+}
+
+.space140 {
+  margin-bottom: 140px;
+}
+
+
+.h-100{min-height: 100vh}
+
+
+.less-margin{ margin:0 !important}
+.less_left{ padding-left:0 !important; }
+.less_right{ padding-right:0;}
+
+
+.less-right-0px{ padding-right:0px!important;}
+.less-left-0px{ padding-left: 0px!important;}
+
+.less-right-5px{ padding-right:5px;}
+.less-left-5px{ padding-left: 5px;}
+
+.less-right-10px{ padding-right:10px;}
+.less-left-10px{ padding-left: 10px;}
+
+
+.space-left-2px{ margin-left:5px;}
+.space-left-5px{ margin-left:5px;}
+.space-right-2px{ margin-right:5px;}
+.space-right-5px{ margin-right:5px;}
+
+/* line height */
+.line-height-10 {line-height:10px}
+.line-height-13 {line-height:13px}
+.line-height-18 {line-height:18px}
+.line-height-20 {line-height:20px}
+.line-height-24 {line-height:24px}
+.line-height-22 {line-height:22px}
+.line-height-26 {line-height:26px}
+.line-height-28 {line-height:28px}
+.line-height-30 {line-height:30px}
+.line-height-35 {line-height:35px}
+.line-height-40 {line-height:40px}
+.line-height-45 {line-height:45px}
+.line-height-50 {line-height:50px}
+.line-height-55 {line-height:55px}
+.line-height-60 {line-height:60px}
+.line-height-65 {line-height:65px}
+.line-height-70 {line-height:70px}
+.line-height-75 {line-height:75px}
+.line-height-80 {line-height:80px}
+.line-height-85 {line-height:85px}
+.line-height-90 {line-height:90px}
+.line-height-95 {line-height:95px}
+.line-height-100 {line-height:100px}
+.line-height-110 {line-height:110px}
+.line-height-120 {line-height:120px}
+
+.font-size-11px{ font-size:11px !important;}
+.font-size-12px{ font-size:12px !important;}
+.font-size-13px{ font-size:13px !important; }
+.font-size-14px{ font-size:14px;}
+.font-size-15px{ font-size:15px !important;}
+.font-size-16px{ font-size:16px !important;}
+.font-size-17px{ font-size:17px !important;}
+.font-size-18px{ font-size:18px !important;}
+.font-size-19px{ font-size:19px !important;}
+.font-size-20px{ font-size:20px !important;}
+.font-size-21px{ font-size:21px !important;}
+.font-size-22px{ font-size:22px !important;}
+.font-size-23px{ font-size:23px !important;}
+.font-size-24px{ font-size:24px !important;}
+.font-size-25px{ font-size:25px !important;}
+
+.font-weight-200{ font-weight:200 !important}
+.font-weight-300{ font-weight:300 !important}
+.font-weight-400{ font-weight:400 !important}
+.font-weight-500{ font-weight:500 !important}
+.font-weight-600{ font-weight:600 !important}
+.font-weight-700{ font-weight:700 !important}
+.font-weight-800{ font-weight:800 !important}
+
+.pt-05{padding-top: 05px !important;}
+.pt-10{padding-top: 10px !important;}
+.pt-15{padding-top: 15px !important;}
+.pt-20{padding-top: 20px !important;}
+.pt-25{padding-top: 25px !important;}
+.pt-30{padding-top: 30px !important;}
+.pt-35{padding-top: 35px !important;}
+.pt-40{padding-top: 40px !important;}
+.pt-45{padding-top: 45px !important;}
+.pt-50{padding-top: 50px !important;}
+.pt-55{padding-top: 55px !important;}
+.pt-60{padding-top: 60px !important;}
+.pt-65{padding-top: 65px !important;}
+.pt-70{padding-top: 70px !important;}
+
+.pb-05{padding-bottom: 05px !important;}
+.pb-10{padding-bottom: 10px !important;}
+.pb-15{padding-bottom: 15px !important;}
+.pb-20{padding-bottom: 20px !important;}
+.pb-25{padding-bottom: 25px !important;}
+.pb-30{padding-bottom: 30px !important;}
+.pb-35{padding-bottom: 35px !important;}
+.pb-40{padding-bottom: 40px !important;}
+.pb-45{padding-bottom: 45px !important;}
+.pb-50{padding-bottom: 50px !important;}
+.pb-55{padding-bottom: 55px !important;}
+.pb-60{padding-bottom: 60px !important;}
+.pb-65{padding-bottom: 65px !important;}
+.pb-70{padding-bottom: 70px !important;}
+
+
+.checkbox {padding-left: 0 !important;}
+
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+  padding-left:0;
+  
+}
+
+.checkbox label{font-size: 13px !important;line-height: 24px;}
+.checkbox label a{color: #000;}
+
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin-right: 0.6em;
+  border-radius:0;
+  padding-left: 0;
+  background-color: #fff;
+  border-radius: 3px;  
+}
+
+
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 2px solid #000;
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin-right: 0.6em;
+  border-radius:0;
+  padding-left: 0;
+  background-color: #fff;
+  border-radius: 3px;
+  
+}
+
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size:0.9em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+  color:#2c2c2c
+}
+
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size:0.9em;
+    line-height: 0;
+    top: 50%;
+    left: 10%;
+  color:#2c2c2c
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.00em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+
+
+.mainBtn {
+	height:50px;
+  	transition: .4s !important;
+	background:#d94d3a;
+	border:solid 0 #fff;
+	font-size: 16px !important;
+	line-height: 15px;
+	color: #fff;
+	letter-spacing: 0;
+	font-weight: 600;
+  padding-left: 50px;padding-right: 50px;
+  border-radius: 6px;
+line-height: 50px;
+padding-top: 0;
+padding-bottom: 0;
+font-family: 'Poppins', sans-serif;
+border: 0
+}
+.mainBtn:hover{background-color: #c83b28; color: #fff}
+
+
+.studentsBtn {
+  height:60px;
+    transition: .4s !important;
+  background:#d94d3a;
+  border:solid 0 #fff;
+  font-size: 18px !important;
+  color: #fff;
+  letter-spacing: 0;
+  font-weight: 600;
+  padding-left: 15px;padding-right: 15px;
+  border-radius: 6px;
+padding-top: 2px;
+padding-bottom: 0;
+font-family: 'Poppins', sans-serif;
+border: 0;
+line-height: 17px;
+}
+.studentsBtn:hover{background-color: #c83b28; color: #fff}
+.studentsBtn span{font-size: 12px; font-weight: 400}
+
+
+.adminBtn {
+  height:60px;
+    transition: .4s !important;
+  background:#333;
+  border:solid 0 #fff;
+  font-size: 18px !important;
+  color: #fff;
+  letter-spacing: 0;
+  font-weight: 600;
+  padding-left: 15px;padding-right: 15px;
+  border-radius: 6px;
+padding-top: 2px;
+padding-bottom: 0;
+font-family: 'Poppins', sans-serif;
+border: 0;
+line-height: 17px;
+}
+.adminBtn:hover{background-color: #000; color: #fff}
+.adminBtn span{font-size: 12px; font-weight: 400}
+
+
+/* Preloader
+-------------------------------------------------------*/
+
+.loader-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99999;
+}
+
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    color: #00c9d0;
+    display: inline-block;
+    margin: -25px 0 0 -25px;
+    text-indent: -9999em;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.lead{
+  font-size:13px;
+}
+.loader div {
+    background-color: #d94d3a;
+    display: inline-block;
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+    border-radius: 50%;
+    -webkit-animation: ballPulseDouble 2s ease-in-out infinite;
+    animation: ballPulseDouble 2s ease-in-out infinite;
+}
+
+.loader div:last-child {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+@-webkit-keyframes ballPulseDouble {
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes ballPulseDouble {
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+.container{max-width: 1024px}
+.wrapper{width: 100%; margin: auto; /*background-color: #717775*/ ; min-height: 100vh}
