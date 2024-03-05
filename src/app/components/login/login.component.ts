@@ -1,16 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { SliderComponent } from '../slider/slider.component';
-import { FormGroup, FormsModule, NgForm, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { UserModel } from '../../models/login.model';
 import { Router } from '@angular/router';
+import { ToastrComponent } from '../toastr/toastr.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
   imports: [SliderComponent,FormsModule,CommonModule],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrl: './login.component.css',
+  providers: [ToastrComponent]
 })
 export class LoginComponent implements OnInit {
   public userForm:UserModel = {
@@ -21,6 +23,7 @@ export class LoginComponent implements OnInit {
   public sliderInfo = {};
   constructor(
     public router: Router,
+    public toastrComponent:ToastrComponent
     ) {
       this.sliderInfo = [
         {
@@ -54,6 +57,7 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['/home']);
     }
     else {
+      this.toastrComponent.showMessage("Invalid Username and Password!!");
       this.showLoginErrorMsg = true
     }
   }
