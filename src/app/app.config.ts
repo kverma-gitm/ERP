@@ -10,6 +10,8 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes), 
     importProvidersFrom([BrowserAnimationsModule]),
     provideAnimations(),
-    provideToastr(),
+    provideToastr({
+      preventDuplicates:true
+    }),
   ],
 };

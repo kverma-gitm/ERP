@@ -10,7 +10,6 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ToastrComponent {
   constructor(private toastr: ToastrService) {}
-
   showMessage(message:string) {
     this.toastr.error(message);
   }
