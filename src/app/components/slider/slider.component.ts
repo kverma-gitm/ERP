@@ -10,6 +10,7 @@ import { OwlOptions,CarouselModule } from 'ngx-owl-carousel-o';
   styleUrl: './slider.component.css'
 })
 export class SliderComponent {
+  @Input() sliderData:any;
   customOptions: OwlOptions = {
     loop: true,
     autoplay: true,
@@ -29,6 +30,4 @@ export class SliderComponent {
       }
     }
   }
-  @Input() 
-  sliderData:any;
 }

@@ -1,0 +1,507 @@
+
+
+/* Dashboard Page Style*/
+.apexcharts-toolbar {
+    display: none !important;
+}
+
+/* Sidebar start */
+
+.page-overlay{position: fixed; top: 0; right: 0; left: 0; bottom: 0; background-color: rgba(255,255,255,0.7);}
+
+.sidebar{width: 330px;position: fixed;background-color: rgba(255,255,255,0.5); height: 100%; z-index: 99;-webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);-moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);
+box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);padding: 0 10px;}
+.scoller{overflow: auto;position: relative;height: 90vh;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;padding-bottom: 0;}
+.scoller::-webkit-scrollbar {width: 2px;}
+.scoller::-webkit-scrollbar-track {background-color: #e2e2e2}
+.scoller::-webkit-scrollbar-thumb {background-color: #4c4c4c;}
+
+
+.sidebar__menu{position: relative; margin: 0; padding: 0}
+.sidebar__menu ul{margin: 0;padding: 0;}
+.sidebar__menu ul li{}
+.sidebar__menu li a{display: block; border:solid 1px #ffdedb;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+	box-sizing: border-box;text-align: center; font-size: 12px; background-color: #ffffff88; border-radius:10px;margin-top: 10px;padding: 20px 0;}
+.sidebar__menu ul li i{display: block; font-size: 30px; color: #d94d3a; margin-bottom: 5px;}
+.sidebar__menu li a:hover{background-color: #d94d3a; color: #fff; border-color: #d94d3a}
+.sidebar__menu li a:hover i{color: #fff}
+
+
+/* header start */
+.header{position: fixed; top: 0;-webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);-moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);
+box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1); width: 100%; right: 0; left: 0; background-color: #d94d3a;height: 60px; box-shadow:0 0 10px 0 rgba(0,0,0,0.1);padding-left:360px;z-index: 3;padding-right: 20px; }
+
+@media (max-width: 575px) { 
+.header{padding-right: 15px; padding-left: 15px;}
+}
+
+
+.user-drop{padding-top: 8px;cursor: pointer;font-weight: 500; margin-left: 10px;position: relative;font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 400}
+.user-drop .avtar{height: 44px; width: 44px; background-size: cover; border-radius: 100%;display: inline-block; margin-left: 10px; vertical-align: middle;background-color: #333}
+.user-drop a{color: #fff}
+.user-dropdown{padding: 0; top: 5px !important; border:solid 1px #f5f5f5; min-width: 220px;border-radius: 6px; font-size: 14px; overflow: hidden;}
+h1.page__title{font-size: 22px; color: #fff; margin:0; padding: 0;padding-top: 18px;}
+.user-dropdown a{padding: 7px 10px; color: #000; display: block;}
+.user-dropdown a:hover{background-color: #333; color: #fff}
+
+
+.main-section .sectioninner{padding-right: 35px;padding-left: 35px;padding-top: 35px}
+
+.inner-card{padding: 20px; border-radius:10px;background: rgb(242,242,242);
+background: linear-gradient(42deg, rgba(242,242,242,1) 0%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%); overflow: hidden; min-height: 451px;}
+.inner-card h1{ color: #506bfe; margin: 0;padding: 0 0 10px 0 }
+.inner-card h1.psh-right{padding-right: 20px;}
+.inner-card h2{ color: #c94e41; margin: 0;letter-spacing: -0.5px;font-size: 24px; }
+.inner-card p{color: #4e5d66; font-weight: 400}
+
+.dashboardtile{position: relative; min-height: 100px;margin-bottom: 20px; background-position: bottom; background-repeat: no-repeat;padding: 0}
+
+@media (max-width: 575px) { 
+.dashboardtile{margin-bottom: 15px;}
+.inner-card h2{font-size: 20px; }
+}
+
+.dashboardtile .tilegraph{ min-height: 100px;background-position: bottom; background-repeat: no-repeat;padding: 15px; background-size: 100% 55px;}
+
+@media (max-width: 575px) { 
+.dashboardtile .tilegraph{padding: 20px 15px;text-align: center;}
+}
+
+
+.dashboardtile .graphimg{margin-top: 15px;}
+.dashboardtile .icon-left{height: 58px; width: 58px; border-radius: 100%; text-align: center;line-height: 58px; font-size: 22px; color: #fff; float: left;}
+.dashboardtile .widget-left{padding-left: 5px;}
+.dashboardtile .widget-left h3{margin: 0;padding: 0; font-size: 30px;line-height: 30px; letter-spacing: -1px;padding-top: 12px;}
+.dashboardtile .widget-left p{margin: 0;padding: 0;line-height: normal !important;color: #000; font-size: 15px;}
+.dashboardtile .one .icon-left{background-color: #506bfe}
+.dashboardtile .one h3{color: #506bfe}
+.dashboardtile .two .icon-left{background-color: #26b4c7}
+.dashboardtile .two h3{color: #26b4c7}
+.dashboardtile .three .icon-left{background-color: #28c76f}
+.dashboardtile .three h3{color: #28c76f}
+.dashboardtile .four .icon-left{background-color: #ea5455}
+.dashboardtile .four h3{color: #ea5455}
+
+.dashboardtile i{font-size: 45px;margin-top: 12px;display: block;}
+.dashboardtile .icon-1{color: #506bfe}
+.dashboardtile .icon-2{color: #26b4c7}
+.dashboardtile .icon-3{color: #28c76f}
+.dashboardtile .icon-4{color: #ea5455}
+
+@media (max-width: 575px) { 
+.dashboardtile .widget-left{padding-left: 0;}
+.dashboardtile i{font-size: 35px;}
+.dashboardtile .widget-left p{font-size: 13px;}
+}
+
+
+.progressTile{padding-bottom: 0}
+.progressTile h2{font-size: 22px; font-weight: 500}
+.progressTile .btm-value{color: #000;font-size: 14px;padding-bottom: 25px;text-align: left}
+.progressTile .btm-value span{font-weight: 600;color: #506bfe}
+.progressTile .btm-value div.value{}
+.progressTile .border-left{border-left:solid 1px #fff;}
+
+.progress {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+  margin-top: 25px;
+  text-align: center;
+}
+
+@media (max-width: 575px) { 
+.progress {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) { 
+
+.progress {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+}
+}
+
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid #f1f1f1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 575px) { 
+.progress:after {
+  border: 4px solid #f1f1f1;
+}
+}
+
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+}
+.progress .progress-left {
+  left: 0;
+}
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 8px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+  border-color: #1c9ef7;
+}
+
+
+@media (max-width: 575px) { 
+.progress .progress-bar {
+  border-width: 4px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+.progress .progress-bar {
+  border-width: 8px;
+}
+}
+
+.progress .progress-green{border-color: #158b47;}
+.progress .progress-red{border-color: #d94d3a;}
+.progress .progress-orange{border-color: #feb019;}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius:100px;
+  border-bottom-right-radius: 100px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.progress .progress-right {
+  right: 0;
+}
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+.progress .progress-value {
+  display: flex;
+  border-radius: 50%;
+  font-size: 40px;
+  text-align: center;
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  letter-spacing: -2px
+}
+
+@media (max-width: 575px) { 
+.progress .progress-value {
+  font-size: 25px;
+  line-height: 20px;
+  letter-spacing: -1px;
+  font-weight: 700
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) { 
+.progress .progress-value {
+  font-size: 25px;
+  line-height: 20px;
+  letter-spacing: -1px;
+  font-weight: 700
+}
+}
+
+.progress .progress-value div {
+  margin-top: 30px;
+}
+@media (max-width: 575px) { 
+.progress .progress-value div {
+  margin-top: 0px;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) { 
+.progress .progress-value div {
+  margin-top: 0px;
+}
+}
+.progress .progress-value span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.progress .progress-value p{padding-top: 5px;letter-spacing: normal;font-size: 12px}
+@media (max-width: 575px) { 
+  .progress .progress-value p {display: none;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+  .progress .progress-value p {display: none;}
+}
+
+/* This for loop creates the  necessary css animation names 
+Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+*/
+.progress[data-percentage="10"] .progress-right .progress-bar {
+  animation: loading-1 1.5s linear forwards;
+}
+.progress[data-percentage="10"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="20"] .progress-right .progress-bar {
+  animation: loading-2 1.5s linear forwards;
+}
+.progress[data-percentage="20"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="30"] .progress-right .progress-bar {
+  animation: loading-3 1.5s linear forwards;
+}
+.progress[data-percentage="30"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="40"] .progress-right .progress-bar {
+  animation: loading-4 1.5s linear forwards;
+}
+.progress[data-percentage="40"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="50"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="50"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="60"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="60"] .progress-left .progress-bar {
+  animation: loading-1 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="70"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="70"] .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="80"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="80"] .progress-left .progress-bar {
+  animation: loading-3 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="90"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="90"] .progress-left .progress-bar {
+  animation: loading-4 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="100"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="100"] .progress-left .progress-bar {
+  animation: loading-5 1.5s linear forwards 1.5s;
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(36);
+    transform: rotate(36deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(72);
+    transform: rotate(72deg);
+  }
+}
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(108);
+    transform: rotate(108deg);
+  }
+}
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144);
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180);
+    transform: rotate(180deg);
+  }
+}
+.progress {
+  margin-bottom: 1em;
+}
+
+
+.page__header{margin-bottom: 10px;color: #fff;padding-bottom: 5px;}
+h1.mobilepage__title{font-size:18px; color: #333; margin:0; padding: 0px 0;}
+h1.mobilepage__title i{font-size: 20px; margin-left: 2px;color: #d94d3a}
+
+
+.container-calendar {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.button-container-calendar button {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #00a2b7;
+    color: #fff;
+    border: 1px solid #0aa2b5;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-calendar td, .table-calendar th {
+    padding:11px 5px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    vertical-align: top;
+}
+
+.date-picker.selected {
+    font-weight: bold;
+    outline: 1px dashed #00BCD4;
+}
+
+.date-picker.selected span {
+    border-bottom: 2px solid currentColor;
+}
+
+/* sunday */
+.date-picker:nth-child(1) {
+  color: red;
+}
+
+/* friday */
+.date-picker:nth-child(6) {
+  color: green;
+}
+
+#monthAndYear {
+    text-align: center;
+    margin-top: 0;
+}
+
+.button-container-calendar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    clear: both;
+}
+
+#previous {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+
+.footer-container-calendar {
+  text-align: right
+}
+
+.footer-container-calendar select {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #ffffff;
+    color: #585858;
+    border: 1px solid #bfc5c5;
+    border-radius: 3px;
+    padding: 3px 0.5em;
+    font-size: 13px;
+}
+
+
+
+.upcoming__birthday{position: relative;overflow: auto; height: 355px;}
+.upcoming__birthday ul{margin: 0; text-align: center;padding-left: 0}
+.upcoming__birthday li{margin: 0; margin-bottom: 12px;}
+.upcoming__birthday .avtar{height: 48px; width: 48px; background-color: #ccc; border-radius: 50%; margin: auto; margin-bottom: 5px; background-size: cover;}
+
+
+@media (max-width: 575px) { 
+.less__spacing{margin: 0 -25px;}
+.upcoming__birthday{ height: auto;}
+}

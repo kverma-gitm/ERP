@@ -14,7 +14,11 @@ body {
   background-image: url(../img/school-bg.jpg);
   background-size: cover;
   scroll-behavior: smooth;
+  background-attachment: fixed;
 }
+
+body.bg-2{background-image: url(../img/school-bg2.jpg);}
+
 
 body, html {
   /* prevent horizontal scrolling */
@@ -34,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: normal;
 	color: #000000;
 	font-weight:600;
+  font-family: 'Poppins', sans-serif;
 }
 p {
 	font-size: 14px;	
@@ -57,8 +62,16 @@ a, a:hover, a:focus, a:active, button, button:focus, input, textarea {
 h1{font-family: 'Poppins', sans-serif;font-style: normal;font-size: 25px; font-weight: 600; color: #3c4257; margin: 0;padding: 0; letter-spacing: -0.5px;padding-bottom: 8px;}
 h2{font-family: 'Poppins', sans-serif;font-style: normal;font-size: 18px;font-weight: 600; color: #3c4257}
 h3{font-family: 'Poppins', sans-serif; font-size: 19px; color: #000; margin: 0;padding: 0;line-height: normal;}
+h3{font-family: 'Poppins', sans-serif; font-size: 19px; color: #000; margin: 0;padding: 0;line-height: normal;}
 
 p{font-family: 'Roboto', sans-serif;font-style: normal;font-size: 14px;}
+
+
+
+::-webkit-scrollbar {width: 4px; }
+::-webkit-scrollbar-track {background-color: #e2e2e2}
+::-webkit-scrollbar-thumb {background-color: #4c4c4c;border-radius: 100px;}
+
 
 
 /* 02. COMMON STYLES */
@@ -476,3 +489,184 @@ line-height: 17px;
 
 .container{max-width: 1024px}
 .wrapper{width: 100%; margin: auto; /*background-color: #717775*/ ; min-height: 100vh}
+.dashboard-wrapper{width: 100%; margin: auto;; min-height: 100vh}
+
+.main-section{padding-left: 360px; padding-top: 86px;padding-bottom: 30px;position: relative;z-index: 2;padding-right: 30px;}
+
+@media (max-width: 575px) { 
+.main-section{padding-right: 15px; padding-left: 15px; padding-top: 76px;}
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+.main-section{padding-right: 15px; padding-left: 15px;}
+}
+
+
+
+
+.mobile-header{
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);
+  width: 100%;
+  right: 0;
+  left: 0;
+  background-color: #d94d3a;
+  height: 60px;
+  z-index: 3;
+}
+.mobile-header .logo{position: absolute; top: 15px; left: 55px; z-index: 999}
+.mobile-header .user{position: absolute; top: 0; right:15px;}
+.mobile-header .sidebar__menu{padding-top: 0;}
+
+.offcanvas-menu > label {
+  top: 15px;
+  left: 12px;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+}
+
+.offcanvas-menu .overlay{position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,0.5); width: 100%;}
+
+.toogle-close{right: 15px; position: relative; float: right; color: #fff;font-size: 24px;cursor: pointer;position: relative; top: 15px;}
+.offcanvas-menu .menu__header{padding-left: 15px;font-family: 'Poppins', sans-serif;padding-top: 7px;position: relative;display: inline-block; margin: 0; font-size: 18px; color: #fff;padding-top: 20px;}
+.offcanvas-menu .tp-header{height: 60px; background-color: #d94d3a; color: #fff}
+.offcanvas-menu nav > div label span:before, .offcanvas-menu nav > div label span:after{background-color: #fff !important}
+.offcanvas-menu label span,
+.offcanvas-menu label span::before,
+.offcanvas-menu label span::after {
+  transition: background 0.3s, transform 0.3s;  
+}
+.offcanvas-menu label span,
+.offcanvas-menu label span::before,
+.offcanvas-menu label span::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  background: #fff;
+  border-radius: 50px;
+}
+.offcanvas-menu label span::before {
+  transform: translateY(-10px);
+}
+.offcanvas-menu label span::after {
+  transform: translateY(10px);
+}
+.offcanvas-menu nav {
+  position: fixed;
+  height:100vh;
+  width: 100%;
+  max-width: 100%;
+  left: -100%;
+  overflow: hidden;
+  background: #fff;
+  transition: 0.3s ease;
+  padding: 0 0;
+  z-index: 9999 !important
+}
+.offcanvas-menu nav > div {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offcanvas-menu nav > div label {
+  width: 30px;
+  height: 30px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.offcanvas-menu nav > div label span,
+.offcanvas-menu nav > div label span:before,
+.offcanvas-menu nav > div label span:after {
+  background: #000;
+}
+
+.offcanvas-menu input[type=checkbox] {
+  display: none;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ label {
+  opacity: 0;
+  pointer-events: none;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav {
+  left: 0;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav label span {
+  background: transparent;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav label span:before {
+  transform: rotate(-45deg);
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav label span:after {
+  transform: rotate(45deg);
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav label span:before,
+.offcanvas-menu input[type=checkbox]:checked ~ nav label span:after {
+  transition-delay: 0.2s;
+}
+
+
+
+
+.offcanvas{width: 330px !important;}
+
+
+
+.offcanvas .offcanvas-title{font-size: 18px; padding-top: 10px; color: #fff}
+.offcanvas-header{padding: 0 20px; height: 60px; background-color: #d94d3a; color: #fff}
+.offcanvas-header .btn__close{color: #fff;font-size: 24px;cursor: pointer; position: relative;top: 4px;}
+
+.offcanvas-body{overflow: auto;position: relative;height: 90vh;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;padding-bottom: 20px;}
+.offcanvas-body::-webkit-scrollbar {width: 2px;}
+.offcanvas-body::-webkit-scrollbar-track {background-color: #4c4c4c}
+.offcanvas-body::-webkit-scrollbar-thumb {background-color: #e2e2e2;}
+
+
+
+.table-responsive::-webkit-scrollbar {
+  height: 3px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+  background-color: #e2e2e2
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  height: 5px;
+  background-color: #4c4c4c;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background-color: #000;
+}
+
+.table-responsive::-webkit-scrollbar:vertical {
+  display: none;
+}
+
+
+
+/* footer start */
+
+.footer{width: auto;padding: 0px 15px 20px 0; text-align: center;font-size: 12px; position: relative; bottom: 0; color: #000; margin-left: 330px;}
+@media (max-width: 575px) { 
+.footer{padding-right: 15px; padding-left: 15px;margin-left: 0;}
+}
+
+/* footer end */
+
