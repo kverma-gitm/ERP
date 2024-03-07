@@ -1,19 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SidebarComponent } from '../sidebar/sidebar.component';
-import { ApexchartsComponent, ChartOptions } from '../apexcharts/apexcharts.component';
+import { ApexchartsComponent } from '../apexcharts/apexcharts.component';
 import { HomePageService } from '../../../services/homepage-service';
+import { CommonModule } from '@angular/common';
+import { AttendanceComponent } from '../attendance/attendance.component';
 
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [SidebarComponent,ApexchartsComponent],
+  imports: [SidebarComponent,ApexchartsComponent,CommonModule,AttendanceComponent],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css',
   providers: [HomePageService]
 })
 export class HomepageComponent implements OnInit {
-  public radarChart: Partial<ChartOptions> = {};
+  public radarChart: any;
+  public areaChart: any;
   constructor(
     public router: Router,
     public homePageService: HomePageService,
@@ -26,6 +29,7 @@ export class HomepageComponent implements OnInit {
       }
 
       this.radarChart = this.homePageService.getRadarChartData();
+      this.areaChart = this.homePageService.getAreaChartData();
     }
 
     logout() {

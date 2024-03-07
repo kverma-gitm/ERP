@@ -1,0 +1,13 @@
+<div class="progress" [attr.data-percentage]="attendance">
+    <span class="progress-left">
+        <span class="progress-bar" [class]="'progress-'+color"></span>
+    </span>
+    <span class="progress-right">
+        <span class="progress-bar" [class]="'progress-'+color"></span>
+    </span>
+    <div class="progress-value">
+        <div class="text-center">
+            {{attendance}} <br><p>{{title}}</p>
+        </div>
+    </div>
+</div>

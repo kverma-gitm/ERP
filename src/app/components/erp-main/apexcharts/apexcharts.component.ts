@@ -30,18 +30,18 @@ export type ChartOptions = {
 export class ApexchartsComponent implements OnInit {
   public chartOptions: Partial<ChartOptions> = {};
   
-  @Input() series:ApexAxisChartSeries | null = null;
-  @Input() chart:ApexChart | null = null;
-  @Input() title:ApexXAxis | null = null;
-  @Input() xaxis:ApexTitleSubtitle | null = null;
-  @Input() labels: string[] = [];
+  @Input() series:any = [];
+  @Input() chart:any = {};
+  @Input() title:any = {};
+  @Input() xaxis:any = {};
+  @Input() labels: any = [];
+  @Input() dataLabels:any = {};
+  @Input() stroke:any = {};
+  @Input() tooltip:any = {};
   // @Input() annotations: ApexAnnotations | null = null;
   // @Input() colors: string[] = [];
-  // @Input() dataLabels: ApexDataLabels | null = null;
-  // @Input() stroke: ApexStroke | null = null;
   // @Input() legend: ApexLegend | null = null;
   // @Input() fill: ApexFill | null = null;
-  // @Input() tooltip: ApexTooltip | null = null;
   // @Input() plotOptions: ApexPlotOptions | null = null;
   // @Input() responsive: ApexResponsive[] | null = null;
   // @Input() yaxis: ApexYAxis | ApexYAxis[] | null = null;
@@ -54,13 +54,6 @@ export class ApexchartsComponent implements OnInit {
     ) {}
     
     ngOnInit(): void {
-      this.chartOptions = {
-        ...( this.series && {series: this.series}),
-        ...( this.chart && {chart: this.chart}),
-        ...( this.title && {title: this.title}),
-        ...( this.xaxis && {xaxis: this.xaxis}),
-        ...( this.labels && {labels: this.labels}),
-      };
     }
     
   }

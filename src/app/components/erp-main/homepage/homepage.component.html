@@ -205,55 +205,22 @@
             <div class="col-12">
                 <div class="inner-card shadow-sm border p-4">
                     <h2 class="pb-20">Students Attendance</h2>
-                    <div id="chart" class="pb-4"> </div>
+                    <div class="pb-4">
+                      <app-apexcharts [series]="areaChart.series" [chart]="areaChart.chart" [title]="areaChart.title" [xaxis]="areaChart.xaxis"
+                      [stroke]="areaChart.stroke" [dataLabels]="areaChart.dataLabels" [tooltip]="areaChart.tooltip"></app-apexcharts>
+                    </div>
                     <div class="row">
                         <div class="col-xl-6">
                             <h3>Today's Attendance</h3>
                             <div class="row">
                                 <div class="col-4">
-                                    <div class="progress" data-percentage="80">
-                                      <span class="progress-left">
-                                        <span class="progress-bar progress-green"></span>
-                                      </span>
-                                      <span class="progress-right">
-                                        <span class="progress-bar progress-green"></span>
-                                      </span>
-                                      <div class="progress-value">
-                                        <div class="text-center">
-                                          80 <br><p>Total Present</p>
-                                        </div>
-                                      </div>
-                                    </div>
+                                  <app-attendance [attendance]="80" [color]="'green'" [title]="'Total Present'"></app-attendance>
                                 </div>
                                 <div class="col-4">
-                                    <div class="progress" data-percentage="70">
-                                      <span class="progress-left">
-                                        <span class="progress-bar progress-red"></span>
-                                      </span>
-                                      <span class="progress-right">
-                                        <span class="progress-bar progress-red"></span>
-                                      </span>
-                                      <div class="progress-value">
-                                        <div>
-                                          70 <br><p>Total Absent</p>
-                                        </div>
-                                      </div>
-                                    </div>
+                                  <app-attendance [attendance]="70" [color]="'red'" [title]="'Total Absent'"></app-attendance>
                                 </div>
                                 <div class="col-4">
-                                    <div class="progress" data-percentage="20">
-                                      <span class="progress-left">
-                                        <span class="progress-bar progress-orange"></span>
-                                      </span>
-                                      <span class="progress-right">
-                                        <span class="progress-bar progress-orange"></span>
-                                      </span>
-                                      <div class="progress-value">
-                                        <div>
-                                          20 <br><p>Total Leaves</p>
-                                        </div>
-                                      </div>
-                                    </div>
+                                  <app-attendance [attendance]="20" [color]="'orange'" [title]="'Total Leaves'"></app-attendance>
                                 </div>
                             </div>
                         </div>
@@ -308,56 +275,23 @@
             <div class="col-12">
                 <div class="inner-card shadow-sm border p-4">
                     <h2 class="pb-20">Staff Attendance</h2>
-                    <div id="chart2" class="pb-4"> </div>
+                    <div class="pb-4">
+                      <app-apexcharts [series]="areaChart.series" [chart]="areaChart.chart" [title]="areaChart.title" [xaxis]="areaChart.xaxis"
+                      [stroke]="areaChart.stroke" [dataLabels]="areaChart.dataLabels" [tooltip]="areaChart.tooltip"></app-apexcharts>
+                    </div>
                     <div class="row">
                         <div class="col-xl-6">
                             <h3>Today's Attendance</h3>
                             <div class="row">
-                                <div class="col-4">
-                                    <div class="progress" data-percentage="40">
-                                      <span class="progress-left">
-                                        <span class="progress-bar progress-green"></span>
-                                      </span>
-                                      <span class="progress-right">
-                                        <span class="progress-bar progress-green"></span>
-                                      </span>
-                                      <div class="progress-value">
-                                        <div class="text-center">
-                                          40 <br><p>Total Present</p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="progress" data-percentage="50">
-                                      <span class="progress-left">
-                                        <span class="progress-bar progress-red"></span>
-                                      </span>
-                                      <span class="progress-right">
-                                        <span class="progress-bar progress-red"></span>
-                                      </span>
-                                      <div class="progress-value">
-                                        <div>
-                                          50 <br><p>Total Absent</p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="progress" data-percentage="90">
-                                      <span class="progress-left">
-                                        <span class="progress-bar progress-orange"></span>
-                                      </span>
-                                      <span class="progress-right">
-                                        <span class="progress-bar progress-orange"></span>
-                                      </span>
-                                      <div class="progress-value">
-                                        <div>
-                                          90 <br><p>Total Leaves</p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                </div>
+                              <div class="col-4">
+                                <app-attendance [attendance]="40" [color]="'green'" [title]="'Total Present'"></app-attendance>
+                              </div>
+                              <div class="col-4">
+                                <app-attendance [attendance]="50" [color]="'red'" [title]="'Total Absent'"></app-attendance>
+                              </div>
+                              <div class="col-4">
+                                <app-attendance [attendance]="90" [color]="'orange'" [title]="'Total Leaves'"></app-attendance>
+                              </div>
                             </div>
                         </div>
                         <div class="col-xl-6">
@@ -605,9 +539,8 @@
                 <div class="inner-card shadow-sm border p-4">
                     <h3 class="mb-3">Total Fee Summary</h3>
                     <div class="row">
-                        <div class="col-lg-6">
-                            <!-- <app-apexcharts [series]="radarChart?.series" [lables]="radarChart?.labels"></app-apexcharts> -->
-                            <!-- <app-apexcharts [series]="radarChart?.series" ></app-apexcharts> -->
+                        <div class="col-lg-6" *ngIf="radarChart">
+                            <app-apexcharts [series]="radarChart.series" [chart]="radarChart.chart" [title]="radarChart.title" [xaxis]="radarChart.xaxis"></app-apexcharts>
                         </div>
                         <div class="col-lg-6">
                             <h3 class="text-center mb-3">Fee Due : 05</h3>
