@@ -64,5 +64,25 @@ export class HomePageService {
             }
           };
     }
+
+    getAttendanceData() {
+        return [
+            {
+                attentance:80,
+                color:'green',
+                title:'Total Present'
+            },
+            {
+                attentance:70,
+                color:'red',
+                title:'Total Absent'
+            },
+            {
+                attentance:20,
+                color:'orange',
+                title:'Total Leaves'
+            }
+        ]
+    }
     
 }

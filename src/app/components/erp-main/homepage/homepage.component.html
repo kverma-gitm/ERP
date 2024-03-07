@@ -213,15 +213,11 @@
                         <div class="col-xl-6">
                             <h3>Today's Attendance</h3>
                             <div class="row">
-                                <div class="col-4">
-                                  <app-attendance [attendance]="80" [color]="'green'" [title]="'Total Present'"></app-attendance>
-                                </div>
-                                <div class="col-4">
-                                  <app-attendance [attendance]="70" [color]="'red'" [title]="'Total Absent'"></app-attendance>
-                                </div>
-                                <div class="col-4">
-                                  <app-attendance [attendance]="20" [color]="'orange'" [title]="'Total Leaves'"></app-attendance>
-                                </div>
+                                <ng-container *ngFor="let value of attentanceData">
+                                  <div class="col-4">
+                                    <app-attendance [attendance]="value?.attentance" [color]="value?.color" [title]="value?.title"></app-attendance>
+                                  </div>
+                                </ng-container>
                             </div>
                         </div>
                         <div class="col-xl-6">
@@ -283,15 +279,11 @@
                         <div class="col-xl-6">
                             <h3>Today's Attendance</h3>
                             <div class="row">
-                              <div class="col-4">
-                                <app-attendance [attendance]="40" [color]="'green'" [title]="'Total Present'"></app-attendance>
-                              </div>
-                              <div class="col-4">
-                                <app-attendance [attendance]="50" [color]="'red'" [title]="'Total Absent'"></app-attendance>
-                              </div>
-                              <div class="col-4">
-                                <app-attendance [attendance]="90" [color]="'orange'" [title]="'Total Leaves'"></app-attendance>
-                              </div>
+                              <ng-container *ngFor="let value of attentanceData">
+                                <div class="col-4">
+                                  <app-attendance [attendance]="value?.attentance" [color]="value?.color" [title]="value?.title"></app-attendance>
+                                </div>
+                              </ng-container>
                             </div>
                         </div>
                         <div class="col-xl-6">

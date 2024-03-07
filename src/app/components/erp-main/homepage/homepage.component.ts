@@ -17,6 +17,7 @@ import { AttendanceComponent } from '../attendance/attendance.component';
 export class HomepageComponent implements OnInit {
   public radarChart: any;
   public areaChart: any;
+  public attentanceData: any;
   constructor(
     public router: Router,
     public homePageService: HomePageService,
@@ -30,6 +31,7 @@ export class HomepageComponent implements OnInit {
 
       this.radarChart = this.homePageService.getRadarChartData();
       this.areaChart = this.homePageService.getAreaChartData();
+      this.attentanceData = this.homePageService.getAttendanceData();
     }
 
     logout() {
