@@ -21,7 +21,8 @@ export class HomepageComponent implements OnInit {
   public attentanceData: any;
   public pendingLeavesData: any;
   public absentStudentsData:any
-  public feeDueTableData:any
+  public feeDueTableData:any;
+  public dashboardData:any;
   constructor(
     public router: Router,
     public homePageService: HomePageService,
@@ -38,7 +39,8 @@ export class HomepageComponent implements OnInit {
       this.attentanceData = this.homePageService.getAttendanceData();
       this.pendingLeavesData = this.homePageService.getPendingLeavesData();
       this.absentStudentsData = this.homePageService.getAbsentTableData();
-      this.feeDueTableData = this.homePageService.getFeeDueTableData()
+      this.feeDueTableData = this.homePageService.getFeeDueTableData();
+      this.dashboardData = this.homePageService.getDashboardData();
     }
 
     logout() {

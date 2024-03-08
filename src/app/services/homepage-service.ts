@@ -191,5 +191,14 @@ export class HomePageService {
       ]
     }
   }
+
+  getDashboardData() {
+    return {
+      totalStaff:247,
+      totalStudents:850,
+      totalSection:500,
+      cancelled: 200
+    }
+  }
   
 }
