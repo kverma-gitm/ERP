@@ -6,11 +6,19 @@ import { HomePageService } from '../../../services/homepage-service';
 import { CommonModule } from '@angular/common';
 import { AttendanceComponent } from '../attendance/attendance.component';
 import { TableComponent } from '../table/table.component';
+import { BirthdayComponent } from '../birthday/birthday.component';
 
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [SidebarComponent,ApexchartsComponent,CommonModule,AttendanceComponent,TableComponent],
+  imports: [
+    SidebarComponent,
+    ApexchartsComponent,
+    CommonModule,
+    AttendanceComponent,
+    TableComponent,
+    BirthdayComponent
+  ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css',
   providers: [HomePageService]
@@ -23,6 +31,8 @@ export class HomepageComponent implements OnInit {
   public absentStudentsData:any
   public feeDueTableData:any;
   public dashboardData:any;
+  public userData:any;
+  public studentsData:any;
   constructor(
     public router: Router,
     public homePageService: HomePageService,
@@ -41,6 +51,8 @@ export class HomepageComponent implements OnInit {
       this.absentStudentsData = this.homePageService.getAbsentTableData();
       this.feeDueTableData = this.homePageService.getFeeDueTableData();
       this.dashboardData = this.homePageService.getDashboardData();
+      this.userData = this.homePageService.getUserData();
+      this.studentsData = this.homePageService.getBirthdayData();
     }
 
     logout() {

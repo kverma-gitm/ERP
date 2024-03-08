@@ -200,5 +200,145 @@ export class HomePageService {
       cancelled: 200
     }
   }
+
+  getUserData() {
+    return {
+      firstName: 'Sandeep',
+      lastName: 'Sharma',
+      profilePic: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+    }
+  }
+
+  getBirthdayData() {
+    return [
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      {
+        firstName: 'Priyash',
+        lastName: 'Gupta',
+        class:'Nursary - 2',
+        picture: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1480&t=st=1709914568~exp=1709915168~hmac=cf591c484e64f480fcc3cea43254d7ac62acb758cdbef5c642f8a1a44a561559'
+      },
+      
+    ]
+  }
   
 }
