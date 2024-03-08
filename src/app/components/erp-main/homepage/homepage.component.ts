@@ -5,11 +5,12 @@ import { ApexchartsComponent } from '../apexcharts/apexcharts.component';
 import { HomePageService } from '../../../services/homepage-service';
 import { CommonModule } from '@angular/common';
 import { AttendanceComponent } from '../attendance/attendance.component';
+import { TableComponent } from '../table/table.component';
 
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [SidebarComponent,ApexchartsComponent,CommonModule,AttendanceComponent],
+  imports: [SidebarComponent,ApexchartsComponent,CommonModule,AttendanceComponent,TableComponent],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css',
   providers: [HomePageService]
@@ -18,6 +19,9 @@ export class HomepageComponent implements OnInit {
   public radarChart: any;
   public areaChart: any;
   public attentanceData: any;
+  public pendingLeavesData: any;
+  public absentStudentsData:any
+  public feeDueTableData:any
   constructor(
     public router: Router,
     public homePageService: HomePageService,
@@ -32,6 +36,9 @@ export class HomepageComponent implements OnInit {
       this.radarChart = this.homePageService.getRadarChartData();
       this.areaChart = this.homePageService.getAreaChartData();
       this.attentanceData = this.homePageService.getAttendanceData();
+      this.pendingLeavesData = this.homePageService.getPendingLeavesData();
+      this.absentStudentsData = this.homePageService.getAbsentTableData();
+      this.feeDueTableData = this.homePageService.getFeeDueTableData()
     }
 
     logout() {

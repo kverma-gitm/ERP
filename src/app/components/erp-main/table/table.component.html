@@ -1,0 +1,56 @@
+<ng-container *ngIf="tableData && tableStyle === 'fee'">
+    <h4 class="font-size-16px pb-1">{{tableHeading}}</h4>
+    <div class="table-responsive less__spacing">
+        <table class="table">
+            <thead>
+                <tr class="table-dark">
+                    <ng-container *ngFor="let heading of tableData?.headers">
+                        <th scope="col">{{heading.name}}</th>
+                    </ng-container>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let data of tableData?.data">
+                    <tr>
+                        <ng-container *ngFor="let rowData of data;index as i">
+                            <ng-container *ngIf="i === 0"><th scope="row">{{rowData[rowKeys[i]]}}</th></ng-container>
+                            <ng-container *ngIf="i !== 0">
+                                <td *ngIf="rowData['strong']"><strong>{{rowData[rowKeys[i]]}}</strong></td>
+                                <td *ngIf="!rowData['strong']">{{rowData[rowKeys[i]]}}</td>
+                            </ng-container>
+                        </ng-container>
+                    </tr>  
+                </ng-container>                                   
+            </tbody>
+          </table>
+    </div>
+</ng-container>
+
+
+<ng-container *ngIf="tableData && !tableStyle">
+    <h3 class="mb-3">{{tableHeading}}</h3>
+    <div class="table-responsive less__spacing">
+        <table class="table shadow-sm rounded">
+            <thead>
+                <tr class="table-dark">
+                    <ng-container *ngFor="let heading of tableData?.headers">
+                        <th scope="col">{{heading.name}}</th>
+                    </ng-container>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let data of tableData?.data">
+                    <tr>
+                        <ng-container *ngFor="let rowData of data;index as i">
+                            <ng-container *ngIf="i === 0"><th scope="row">{{rowData[rowKeys[i]]}}</th></ng-container>
+                            <ng-container *ngIf="i !== 0">
+                                <td *ngIf="rowData['strong']"><strong>{{rowData[rowKeys[i]]}}</strong></td>
+                                <td *ngIf="!rowData['strong']">{{rowData[rowKeys[i]]}}</td>
+                            </ng-container>
+                        </ng-container>
+                    </tr>  
+                </ng-container>                                                                                
+            </tbody>
+        </table>
+    </div>
+</ng-container>
