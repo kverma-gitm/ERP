@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { AttendanceComponent } from '../attendance/attendance.component';
 import { TableComponent } from '../table/table.component';
 import { BirthdayComponent } from '../birthday/birthday.component';
+import { CalendarComponent } from '../calendar/calendar.component';
 
 @Component({
   selector: 'app-homepage',
@@ -17,7 +18,8 @@ import { BirthdayComponent } from '../birthday/birthday.component';
     CommonModule,
     AttendanceComponent,
     TableComponent,
-    BirthdayComponent
+    BirthdayComponent,
+    CalendarComponent
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css',
@@ -33,6 +35,8 @@ export class HomepageComponent implements OnInit {
   public dashboardData:any;
   public userData:any;
   public studentsData:any;
+  
+  public dueFees:string = String(new Date().getDate()).padStart(2, '0');
   constructor(
     public router: Router,
     public homePageService: HomePageService,

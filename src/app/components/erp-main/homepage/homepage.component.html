@@ -211,37 +211,8 @@
                       <div class="col-6">
                           <h3 class="mb-3">Events</h3>
                       </div>
-                      <div class="col-6">
-                          <div class="footer-container-calendar">
-                             <select id="month" onchange="jump()">
-                                 <option value=0>Jan</option>
-                                 <option value=1>Feb</option>
-                                 <option value=2>Mar</option>
-                                 <option value=3>Apr</option>
-                                 <option value=4>May</option>
-                                 <option value=5>Jun</option>
-                                 <option value=6>Jul</option>
-                                 <option value=7>Aug</option>
-                                 <option value=8>Sep</option>
-                                 <option value=9>Oct</option>
-                                 <option value=10>Nov</option>
-                                 <option value=11>Dec</option>
-                             </select>
-                             <select id="year" onchange="jump()"></select>       
-                        </div>
-                      </div>
+                      <app-calendar class="footer-container-calendar"></app-calendar>
                   </div>                
-                  <div class="container-calendar">
-                    <div class="button-container-calendar">
-                        <button id="previous" onclick="previous()">&#8249;</button>
-                        <h3 id="monthAndYear"></h3>
-                        <button id="next" onclick="next()">&#8250;</button>
-                    </div>                  
-                    <table class="table-calendar" id="calendar" data-lang="en">
-                        <thead id="thead-month"></thead>
-                        <tbody id="calendar-body"></tbody>
-                    </table>
-                </div>
               </div>
           </div>
           <div class="col-xl-6 pb-30">
@@ -284,7 +255,7 @@
                           <app-apexcharts [series]="radarChart.series" [chart]="radarChart.chart" [title]="radarChart.title" [xaxis]="radarChart.xaxis"></app-apexcharts>
                       </div>
                       <div class="col-lg-6">
-                          <h3 class="text-center mb-3">Fee Due : 05</h3>
+                          <h3 class="text-center mb-3">Fee Due : {{dueFees}}</h3>
                           <app-table [tableData]="feeDueTableData" [tableHeading]="'Previous Fee Summary'" [tableStyle]="'fee'"></app-table>
                           <app-table [tableData]="feeDueTableData" [tableHeading]="'Current Fee Summary'" [tableStyle]="'fee'"></app-table>
                           <app-table [tableData]="feeDueTableData" [tableHeading]="'Over All Summary'" [tableStyle]="'fee'"></app-table>
