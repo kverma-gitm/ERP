@@ -3,29 +3,29 @@
   <aside class="sidebar d-none d-md-block">
     <div class="text-center pb-30 pt-15"><img src="../../../../assets/img/logo.png" alt=""></div>
     <app-sidebar [subSectionName]="'demo'"></app-sidebar>
-</aside>
+  </aside>
   <!-- header bar start  -->
   <header class="header d-none d-md-block">
     <div class="row">
       <div class="col-auto me-auto">
-          <h1 class="page__title"><i class="icon-home"></i> Dashboard</h1>
+        <h1 class="page__title"><i class="icon-home"></i> Dashboard</h1>
       </div>
       <div class="col-auto">
-          <div class="btn-group">
-            <div class="user-drop">
-                <a type="button" class="" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span> {{userData.firstName}} {{userData.lastName}}</span>
-                    <div class="avtar" [style]="'background-image: url(' + userData.profilePic + ')'"></div>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end user-dropdown shadow-sm border">
-                    <li><a href="#"> <i class="icon-settings"></i> Setting</a></li>
-                    <li><a href="#"> <i class="icon-sun"></i> Subscription</a></li>
-                    <li><a href="#"> <i class="icon-star"></i> Transactions</a></li>
-                    <li><a href="#"> <i class="icon-unlock"></i> Password</a></li>
-                    <li (click)="logout()"><a href="#"> <i class="icon-power"></i> Logout</a></li>
-                </ul>
+        <div class="btn-group">
+          <div class="user-drop">
+            <a type="button" class="" data-bs-toggle="dropdown" aria-expanded="false">
+              <span> {{userData.firstName}} {{userData.lastName}}</span>
+              <div class="avtar" [style]="'background-image: url(' + userData.profilePic + ')'"></div>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end user-dropdown shadow-sm border">
+              <li><a href="#"> <i class="icon-settings"></i> Setting</a></li>
+              <li><a href="#"> <i class="icon-sun"></i> Subscription</a></li>
+              <li><a href="#"> <i class="icon-star"></i> Transactions</a></li>
+              <li><a href="#"> <i class="icon-unlock"></i> Password</a></li>
+              <li (click)="logout()"><a href="#"> <i class="icon-power"></i> Logout</a></li>
+            </ul>
           </div>
-          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -44,35 +44,35 @@
       <app-sidebar [subSectionName]="'demo2'"></app-sidebar>    
     </nav>
     <div class="logo">
-        <img src="../../../../assets/img/logo-mb.png" alt="">
+      <img src="../../../../assets/img/logo-mb.png" alt="">
     </div>
     <div class="d-flex user">
       <div class="btn-group">
-      <div class="user-drop">
+        <div class="user-drop">
           <a type="button" class="" data-bs-toggle="dropdown" aria-expanded="false">
-              <div class="avtar" style="background-image: url(../../../../assets/img/team-13.png);"></div>
+            <div class="avtar" style="background-image: url(../../../../assets/img/team-13.png);"></div>
           </a>
           <ul class="dropdown-menu dropdown-menu-end user-dropdown shadow-sm border">
-              <li><a href="#"> <i class="icon-settings"></i> Setting</a></li>
-              <li><a href="#"> <i class="icon-sun"></i> Subscription</a></li>
-              <li><a href="#"> <i class="icon-star"></i> Transactions</a></li>
-              <li><a href="#"> <i class="icon-unlock"></i> Password</a></li>
-              <li><a href="#"> <i class="icon-power"></i> Logout</a></li>
+            <li><a href="#"> <i class="icon-settings"></i> Setting</a></li>
+            <li><a href="#"> <i class="icon-sun"></i> Subscription</a></li>
+            <li><a href="#"> <i class="icon-star"></i> Transactions</a></li>
+            <li><a href="#"> <i class="icon-unlock"></i> Password</a></li>
+            <li><a href="#"> <i class="icon-power"></i> Logout</a></li>
           </ul>
+        </div>
       </div>
-    </div>
     </div>
   </header>
   <!-- header bar end  -->
   <!-- Main section start here -->
   <section class="main-section">
-      <div class="d-block d-md-none page__header">
-          <h1 class="mobilepage__title"><i class="icon-home"></i> Dashboard</h1>
-      </div>
-      <div class="row">
-        <div class="col-6 col-lg-6 col-md-12 col-sm-6 col-xl-3">
-          <div class="inner-card dashboardtile shadow-sm border ">
-            <div class="tilegraph">
+    <div class="d-block d-md-none page__header">
+      <h1 class="mobilepage__title"><i class="icon-home"></i> Dashboard</h1>
+    </div>
+    <div class="row">
+      <div class="col-6 col-lg-6 col-md-12 col-sm-6 col-xl-3">
+        <div class="inner-card dashboardtile shadow-sm border ">
+          <div class="tilegraph">
             <div class="widget one">
               <div class="row">
                 <div class="col-md-8 order-sm-first order-last">
@@ -85,14 +85,14 @@
                   <i class="icon-users icon-1"></i>
                 </div>
               </div>
-            <div class="clearfix"></div>  
+              <div class="clearfix"></div>  
             </div>
           </div>
-          </div>
         </div>
-        <div class="col-6 col-lg-6 col-md-12 col-sm-6 col-xl-3">
-          <div class="inner-card dashboardtile shadow-sm border">
-            <div class="tilegraph">
+      </div>
+      <div class="col-6 col-lg-6 col-md-12 col-sm-6 col-xl-3">
+        <div class="inner-card dashboardtile shadow-sm border">
+          <div class="tilegraph">
             <div class="widget two">
               <div class="row">
                 <div class="col-sm-8 order-sm-first order-last">
@@ -105,14 +105,14 @@
                   <i class="icon-user-check icon-2"></i>
                 </div>
               </div>
-            <div class="clearfix"></div>  
+              <div class="clearfix"></div>  
             </div>
           </div>
-          </div>
         </div>
-        <div class="col-6 col-lg-6 col-md-12 col-sm-6 col-xl-3">
-          <div class="inner-card dashboardtile shadow-sm border">
-            <div class="tilegraph">
+      </div>
+      <div class="col-6 col-lg-6 col-md-12 col-sm-6 col-xl-3">
+        <div class="inner-card dashboardtile shadow-sm border">
+          <div class="tilegraph">
             <div class="widget three">
               <div class="row">
                 <div class="col-sm-8 order-sm-first order-last">
@@ -125,14 +125,14 @@
                   <i class="icon-layers icon-3"></i>
                 </div>
               </div>
-            <div class="clearfix"></div>  
+              <div class="clearfix"></div>  
             </div>
           </div>
-          </div>
         </div>
-        <div class="col-6 col-lg-6 col-md-12 col-sm-6 col-xl-3">
-          <div class="inner-card dashboardtile shadow-sm border" >
-            <div class="tilegraph">
+      </div>
+      <div class="col-6 col-lg-6 col-md-12 col-sm-6 col-xl-3">
+        <div class="inner-card dashboardtile shadow-sm border" >
+          <div class="tilegraph">
             <div class="widget four">
               <div class="row">
                 <div class="col-sm-8 order-sm-first order-last">
@@ -145,130 +145,159 @@
                   <i class="icon-trending-down icon-4"></i>
                 </div>
               </div>
-            <div class="clearfix"></div>  
+              <div class="clearfix"></div>  
             </div>
-          </div>
           </div>
         </div>
       </div>
-      <div class="row">
-          <div class="col-12">
-              <div class="inner-card shadow-sm border p-4">
-                  <h2 class="pb-20">Students Attendance</h2>
-                  <div class="pb-4">
-                    <app-apexcharts [series]="areaChart.series" [chart]="areaChart.chart" [title]="areaChart.title" [xaxis]="areaChart.xaxis"
-                    [stroke]="areaChart.stroke" [dataLabels]="areaChart.dataLabels" [tooltip]="areaChart.tooltip"></app-apexcharts>
-                  </div>
-                  <div class="row">
-                      <div class="col-xl-6">
-                          <h3>Today's Attendance</h3>
-                          <div class="row">
-                              <ng-container *ngFor="let value of attentanceData">
-                                <div class="col-4">
-                                  <app-attendance [attendance]="value?.attentance" [color]="value?.color" [title]="value?.title"></app-attendance>
-                                </div>
-                              </ng-container>
-                          </div>
-                      </div>
-                      <div class="col-xl-6">
-                          <h3 class="mb-3"></h3>
-                          <app-table [tableData]="absentStudentsData" [tableHeading]="'Absent from 3 days'"></app-table>
-                      </div>
-                  </div>
-              </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="inner-card shadow-sm border p-4">
+          <h2 class="pb-20">Students Attendance</h2>
+          <div class="pb-4">
+            <app-apexcharts [series]="areaChart.series" [chart]="areaChart.chart" [title]="areaChart.title" [xaxis]="areaChart.xaxis"
+            [stroke]="areaChart.stroke" [dataLabels]="areaChart.dataLabels" [tooltip]="areaChart.tooltip"></app-apexcharts>
           </div>
+          <div class="row">
+            <div class="col-xl-6">
+              <h3>Today's Attendance</h3>
+              <div class="row">
+                <ng-container *ngFor="let value of attentanceData">
+                  <div class="col-4">
+                    <app-attendance [attendance]="value?.attentance" [color]="value?.color" [title]="value?.title"></app-attendance>
+                  </div>
+                </ng-container>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <h3 class="mb-3"></h3>
+              <app-table [tableData]="absentStudentsData" [tableHeading]="'Absent from 3 days'"></app-table>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row pt-30">
-          <div class="col-12">
-              <div class="inner-card shadow-sm border p-4">
-                  <h2 class="pb-20">Staff Attendance</h2>
-                  <div class="pb-4">
-                    <app-apexcharts [series]="areaChart.series" [chart]="areaChart.chart" [title]="areaChart.title" [xaxis]="areaChart.xaxis"
-                    [stroke]="areaChart.stroke" [dataLabels]="areaChart.dataLabels" [tooltip]="areaChart.tooltip"></app-apexcharts>
-                  </div>
-                  <div class="row">
-                      <div class="col-xl-6">
-                          <h3>Today's Attendance</h3>
-                          <div class="row">
-                            <ng-container *ngFor="let value of attentanceData">
-                              <div class="col-4">
-                                <app-attendance [attendance]="value?.attentance" [color]="value?.color" [title]="value?.title"></app-attendance>
-                              </div>
-                            </ng-container>
-                          </div>
-                      </div>
-                      <div class="col-xl-6">
-                          <app-table [tableData]="pendingLeavesData" [tableHeading]="'Pending Leaves Requests'"></app-table>
-                      </div>
-                  </div>
-              </div>
+    </div>
+    <div class="row pt-30">
+      <div class="col-12">
+        <div class="inner-card shadow-sm border p-4">
+          <h2 class="pb-20">Staff Attendance</h2>
+          <div class="pb-4">
+            <app-apexcharts [series]="areaChart.series" [chart]="areaChart.chart" [title]="areaChart.title" [xaxis]="areaChart.xaxis"
+            [stroke]="areaChart.stroke" [dataLabels]="areaChart.dataLabels" [tooltip]="areaChart.tooltip"></app-apexcharts>
           </div>
-      </div>    
-      <div class="row pt-30">
-          <div class="col-xl-6 pb-30">
-              <div class="inner-card shadow-sm border p-4">
-                  <div class="row">
-                      <div class="col-6">
-                          <h3 class="mb-3">Events</h3>
-                      </div>
-                      <app-calendar class="footer-container-calendar"></app-calendar>
-                  </div>                
-              </div>
-          </div>
-          <div class="col-xl-6 pb-30">
-              <div class="inner-card shadow-sm border p-4">
-                  <h3 class="mb-3 d-inline">Upcoming Birthdays</h3> 
-                  <a class="font-size-13px text-center float-end text-decoration-underline" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    See more birthdays
-                  </a>               
-                  <div class="clearfix pt-3"></div>
-                  <div class="collapse" id="collapseExample3">
-                      <div class="card card-body">
-                          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                      </div>
+          <div class="row">
+            <div class="col-xl-6">
+              <h3>Today's Attendance</h3>
+              <div class="row">
+                <ng-container *ngFor="let value of attentanceData">
+                  <div class="col-4">
+                    <app-attendance [attendance]="value?.attentance" [color]="value?.color" [title]="value?.title"></app-attendance>
                   </div>
-                  <div class="upcoming__birthday pt-4">
-                      <ul class="row">
-                          <ng-container *ngFor="let studentData of studentsData | slice:0:12">
-                            <app-birthday class="col-4 col-md-3 col-lg-3 " [studentData]="studentData"></app-birthday>
-                          </ng-container>
-                      </ul>                    
-                    <div class="collapse" id="collapseExample">
-                      <div>
-                        <ul class="row">
-                          <ng-container *ngFor="let studentData of studentsData">
-                            <app-birthday class="col-4 col-md-3 col-lg-3 " [studentData]="studentData"></app-birthday>
-                          </ng-container>
-                      </ul>  
-                      </div>
-                    </div>                  
-                  </div>                
+                </ng-container>
               </div>
+            </div>
+            <div class="col-xl-6">
+              <app-table [tableData]="pendingLeavesData" [tableHeading]="'Pending Leaves Requests'"></app-table>
+            </div>
           </div>
+        </div>
       </div>
-      <div class="row">
-          <div class="col">
-              <div class="inner-card shadow-sm border p-4">
-                  <h3 class="mb-3">Total Fee Summary</h3>
-                  <div class="row">
-                      <div class="col-lg-6" *ngIf="radarChart">
-                          <app-apexcharts [series]="radarChart.series" [chart]="radarChart.chart" [title]="radarChart.title" [xaxis]="radarChart.xaxis"></app-apexcharts>
-                      </div>
-                      <div class="col-lg-6">
-                          <h3 class="text-center mb-3">Fee Due : {{dueFees}}</h3>
-                          <app-table [tableData]="feeDueTableData" [tableHeading]="'Previous Fee Summary'" [tableStyle]="'fee'"></app-table>
-                          <app-table [tableData]="feeDueTableData" [tableHeading]="'Current Fee Summary'" [tableStyle]="'fee'"></app-table>
-                          <app-table [tableData]="feeDueTableData" [tableHeading]="'Over All Summary'" [tableStyle]="'fee'"></app-table>
-                      </div>
-                  </div>
+    </div>    
+    <div class="row pt-30">
+      <div class="col-xl-6 pb-30">
+        <div class="inner-card shadow-sm border p-4">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="mb-3">Events</h3>
+            </div>
+            <div class="col-6">
+              <div class="footer-container-calendar">
+                <select id="month" onchange="jump()">
+                  <option value=0>Jan</option>
+                  <option value=1>Feb</option>
+                  <option value=2>Mar</option>
+                  <option value=3>Apr</option>
+                  <option value=4>May</option>
+                  <option value=5>Jun</option>
+                  <option value=6>Jul</option>
+                  <option value=7>Aug</option>
+                  <option value=8>Sep</option>
+                  <option value=9>Oct</option>
+                  <option value=10>Nov</option>
+                  <option value=11>Dec</option>
+                </select>
+                <select id="year" onchange="jump()"></select>       
               </div>
+            </div>
+            <!-- <app-calendar class="footer-container-calendar"></app-calendar> -->
+            <div class="container-calendar">
+              <div class="button-container-calendar">
+                  <button id="previous" onclick="previous()">&#8249;</button>
+                  <h3 id="monthAndYear"></h3>
+                  <button id="next" onclick="next()">&#8250;</button>
+              </div>                  
+              <table class="table-calendar" id="calendar" data-lang="en">
+                  <thead id="thead-month"></thead>
+                  <tbody id="calendar-body"></tbody>
+              </table>
           </div>
+          </div>                
+        </div>
       </div>
+      <div class="col-xl-6 pb-30">
+        <div class="inner-card shadow-sm border p-4">
+          <h3 class="mb-3 d-inline">Upcoming Birthdays</h3> 
+          <a class="font-size-13px text-center float-end text-decoration-underline" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            See more birthdays
+          </a>               
+          <div class="clearfix pt-3"></div>
+          <div class="collapse" id="collapseExample3">
+            <div class="card card-body">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+          <div class="upcoming__birthday pt-4">
+            <ul class="row">
+              <ng-container *ngFor="let studentData of studentsData | slice:0:12">
+                <app-birthday class="col-4 col-md-3 col-lg-3 " [studentData]="studentData"></app-birthday>
+              </ng-container>
+            </ul>                    
+            <div class="collapse" id="collapseExample">
+              <div>
+                <ul class="row">
+                  <ng-container *ngFor="let studentData of studentsData">
+                    <app-birthday class="col-4 col-md-3 col-lg-3 " [studentData]="studentData"></app-birthday>
+                  </ng-container>
+                </ul>  
+              </div>
+            </div>                  
+          </div>                
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="inner-card shadow-sm border p-4">
+          <h3 class="mb-3">Total Fee Summary</h3>
+          <div class="row">
+            <div class="col-lg-6" *ngIf="radarChart">
+              <app-apexcharts [series]="radarChart.series" [chart]="radarChart.chart" [title]="radarChart.title" [xaxis]="radarChart.xaxis"></app-apexcharts>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="text-center mb-3">Fee Due : {{dueFees}}</h3>
+              <app-table [tableData]="feeDueTableData" [tableHeading]="'Previous Fee Summary'" [tableStyle]="'fee'"></app-table>
+              <app-table [tableData]="feeDueTableData" [tableHeading]="'Current Fee Summary'" [tableStyle]="'fee'"></app-table>
+              <app-table [tableData]="feeDueTableData" [tableHeading]="'Over All Summary'" [tableStyle]="'fee'"></app-table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- Footer start here -->
   <footer class="footer">
     &copy; 2024 your company | All Rights Reserved
   </footer>
   <!-- Footer end here -->
-  </div>
-  
+</div>
