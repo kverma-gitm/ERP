@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { AttendanceComponent } from '../attendance/attendance.component';
 import { TableComponent } from '../table/table.component';
 import { BirthdayComponent } from '../birthday/birthday.component';
+import { CalendarComponent } from '../calendar/calendar.component';
 
 @Component({
   selector: 'app-homepage',
@@ -17,7 +18,8 @@ import { BirthdayComponent } from '../birthday/birthday.component';
     CommonModule,
     AttendanceComponent,
     TableComponent,
-    BirthdayComponent
+    BirthdayComponent,
+    CalendarComponent
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css',
@@ -41,7 +43,6 @@ export class HomepageComponent implements OnInit {
     ) { }
     
     ngOnInit(): void {
-      this.loadScript();
       let token = localStorage.getItem("token");
       if( !token ) {
         this.router.navigate(['/login']);
@@ -56,16 +57,6 @@ export class HomepageComponent implements OnInit {
       this.dashboardData = this.homePageService.getDashboardData();
       this.userData = this.homePageService.getUserData();
       this.studentsData = this.homePageService.getBirthdayData();
-    }
-    
-    public loadScript() {
-      let body = <HTMLDivElement> document.body;
-      let script = document.createElement('script');
-      script.innerHTML = '';
-      script.src = '../../../../assets/js/main.js';
-      script.async = true;
-      script.defer = true;
-      body.appendChild(script);
     }
     
     logout() {
